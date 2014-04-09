@@ -1,0 +1,18 @@
+{
+	"licensed": false,
+	"packages":
+	[
+		"Base16 Color Schemes",
+		"BracketHighlighter",
+		"Emmet",
+		"Package Control",
+		"RegReplace",
+		"Tag"
+	],
+	"startup_sec": 0.0871287,
+	"syntax":
+	{
+		"JSON": 2
+	},
+	"time": 1396966867
+}
