@@ -9,10 +9,6 @@
 		"RegReplace",
 		"Tag"
 	],
-	"startup_sec": 0.0871287,
-	"syntax":
-	{
-		"JSON": 2
-	},
-	"time": 1396966867
+	"startup_sec": 0.2518981,
+	"time": 1397077903
 }
