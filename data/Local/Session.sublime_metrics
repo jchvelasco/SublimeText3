@@ -9,6 +9,10 @@
 		"RegReplace",
 		"Tag"
 	],
-	"startup_sec": 0.2518981,
+	"startup_sec": 0.2656187,
+	"syntax":
+	{
+		"XML": 12
+	},
 	"time": 1397077903
 }
