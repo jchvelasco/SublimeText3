@@ -503,16 +503,15 @@
 				<string>#2b2b2b</string>
 			</dict>
 		</dict>
-
 	<dict>
             <key>name</key>
-            <string>SublimeLinter Error</string>
+            <string>SublimeLinter Warning</string>
             <key>scope</key>
-            <string>sublimelinter.mark.error</string>
+            <string>sublimelinter.mark.warning</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#DA2000</string>
+                <string>#EDBA00</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -526,29 +525,15 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Warning</string>
+            <string>SublimeLinter Error</string>
             <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
+            <string>sublimelinter.mark.error</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EDBA00</string>
+                <string>#DA2000</string>
             </dict>
-        </dict>
-		<dict>
-		    <key>name</key>
-		    <string>Single-Quoted String</string>
-		    <key>scope</key>
-		    <string>string.quoted.single</string>
-		    <key>settings</key>
-		    <dict>
-		        <key>fontStyle</key>
-		        <string></string>
-		        <key>foreground</key>
-		        <string>#ac4142</string>
-		    </dict>
-		</dict>
-    </array>
+        </dict></array>
 	<key>uuid</key>
 	<string>8b7387e1-d8cf-43c8-b3c2-ff2945ffd3fc</string>
 </dict>

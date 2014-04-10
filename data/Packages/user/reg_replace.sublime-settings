@@ -1,0 +1,15 @@
+{
+    "replacements": {
+        "remove_pid": {
+           "find": " pid=\"([^']*?)\"",
+            "replace": "",
+            "greedy": true,
+            "case": true
+        },
+        "change_nbsp": {
+            "find" : "&nbsp;",
+            "replace": "&#160;",
+            "greedy_replace": true
+        }
+    }
+}

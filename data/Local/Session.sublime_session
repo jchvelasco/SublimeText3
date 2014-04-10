@@ -20,62 +20,96 @@
 			"buffers":
 			[
 				{
-					"contents": "<!DOCTYPE html>\n<html>\n<head>\n	<title></title>\n</head>\n<body>\n<div>\n	<ul>\n		<li></li>\n		<li></li>s\n		<li></li>\n		<li class='sldfsjdlfksjdfl'>\n			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, cupiditate, sapiente omnis ad dolore in eveniet et dicta nisi iusto excepturi temporibus tenetur suscipit sit minima veritatis iste debitis molestias.\n		</li>\n		<li class=\"'test'\"></li>\n		<li>\n		<span>\n	</ul>\n</div>\n</body>\n</html>",
+					"contents": "<xsl:text disable-output-escaping=\"yes\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">&lt;!DOCTYPE html&gt;</xsl:text>\n<html lang=\"en\" dir=\"ltr\">\n    <xsl:variable name=\"pageTitle\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n        <ccbn:page-title xmlns:ccbn=\"urn:ccbn\"/>\n    </xsl:variable>\n    <xsl:variable name=\"pageHeading\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n        <ccbn:page-heading xmlns:ccbn=\"urn:ccbn\"/>\n    </xsl:variable>\n    <xsl:variable name=\"pageName\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n        <xsl:value-of select=\"translate(//Request//p,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')\"/>\n    </xsl:variable>\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n        <link rel=\"shortcut icon\" href=\"http://www.iderapharma.com/sites/all/themes/idera/favicon.ico\" type=\"image/vnd.microsoft.icon\"/>\n<!-- Page title goes here -->\n        <title>\n            <xsl:value-of select=\"$pageTitle\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"/> | Investor Relations | Idera Pharmaceuticals</title>\n        <meta name=\"viewport\" content=\"width=device-width\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"client/20/208904/css/fonts.css\" media=\"all\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"http://www.iderapharma.com/sites/all/themes/idera/layouts/internal/internal.css\" media=\"all\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"http://www.iderapharma.com/sites/all/themes/idera/formalize.css\" media=\"all\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"http://www.iderapharma.com/sites/all/themes/idera/style-wysiwyg.css\" media=\"all\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"http://www.iderapharma.com/sites/all/themes/idera/style.css\" media=\"all\"/>\n        <link type=\"text/css\" rel=\"stylesheet\" href=\"http://www.iderapharma.com/sites/all/themes/idera/style-print.css\" media=\"print\"/>\n        <script type=\"text/javascript\" src=\"http://www.iderapharma.com/misc/jquery.js?v=1.4.4\">\n        </script>\n        <script type=\"text/javascript\" src=\"http://www.iderapharma.com/misc/jquery.once.js?v=1.2\">\n        </script>\n        <script type=\"text/javascript\" src=\"http://www.iderapharma.com/sites/all/themes/idera/respond.min.js\">\n        </script>\n        <link href=\"http://www.iderapharma.com/sites/all/themes/idera/respond-proxy.html\" id=\"respond-proxy\" rel=\"respond-proxy\"/>\n        <link href=\"/media_files/IROL/20/208904/respond.proxy.gif\" id=\"respond-redirect\" rel=\"respond-redirect\"/>\n        <script src=\"client/20/208904/script/respond.proxy.js\">\n        </script>\n        <script type=\"text/javascript\" src=\"http://www.iderapharma.com/sites/all/themes/idera/jquery.formalize.legacy.min.js\">\n        </script>\n        <script type=\"text/javascript\" src=\"client/20/208904/script/highlight.js\">\n        </script>\n        <script type=\"text/javascript\" src=\"http://www.iderapharma.com/sites/all/themes/idera/script.js\">\n        </script>\n        <script type=\"text/javascript\" src=\"//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52741d5f15430f8d\">\n        </script>\n        <script type=\"text/javascript\"><![CDATA[\nvar _gaq = _gaq || [];\n_gaq.push(['_setAccount', 'UA-7725457-4']);\n_gaq.push(['_gat._anonymizeIp']);\n_gaq.push(['_trackPageview']);\n(function() {\nvar ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\nga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\nvar s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n})();\nvar addthis_config = {data_ga_property: 'UA-7725457-4'};\n]]></script>\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"client/20/208904/css/ccbnIR.css\"/>\n        <xsl:text disable-output-escaping=\"yes\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">&lt;!--[if lt IE 8]&gt;\n&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"client/20/208904/css/ie7.css\"/&gt;\n&lt;![endif]--&gt;</xsl:text>\n    </head>\n    <body class=\"html not-front not-logged-in no-sidebars page-ir\">\n        <xsl:text disable-output-escaping=\"yes\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">&lt;!--[if lt IE 9]&gt;\n&lt;div class=\"ie-old\"&gt;\n&lt;![endif]--&gt;</xsl:text>\n        <div>\n            <a id=\"top\">&#160;</a>\n            <a href=\"#main-content\" id=\"skipnav\">Skip to main content</a>\n        </div>\n        <div id=\"page-wrapper\">\n            <div id=\"page\" class=\"clearfix\">\n                <div id=\"header\">\n                    <div class=\"section clearfix\">\n                        <p id=\"logo\">\n                            <a href=\"http://iderapharma.com/\" rel=\"home\">\n                                <img src=\"http://iderapharma.com/sites/all/themes/idera/logo.png\" alt=\"Idera Pharmaceuticals\"/>\n                            </a>\n                        </p>\n                        <div class=\"region region-header\">\n                            <div id=\"block-menu-block-2\" class=\"block block-menu-block\">\n                                <div class=\"content\">\n                                    <div class=\"menu-block-wrapper clearfix\">\n                                        <ul class=\"menu\">\n                                            <li>\n                                                <a href=\"http://iderapharma.com/\">Home</a>\n                                            </li>\n                                            <li>\n                                                <a href=\"http://iderapharma.com/contact-us\">Contact Us</a>\n                                            </li>\n                                            <li class=\"last\">\n                                                <a href=\"http://iderapharma.com/careers\">Careers</a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                            <div id=\"block-custom-search-blocks-1\" class=\"block block-custom-search-blocks\">\n                                <div class=\"content\">\n                                    <form class=\"search-form\" action=\"http://iderapharma.com/search/node\" method=\"post\" id=\"custom-search-blocks-form-1\" accept-charset=\"UTF-8\">\n                                        <div>\n                                            <div class=\"form-item form-type-textfield form-item-custom-search-blocks-form-1\">\n                                                <label for=\"edit-custom-search-blocks-form-1--2\">Search this site</label>\n                                                <input title=\"Enter the terms you wish to search for.\" class=\"custom-search-box form-text\" placeholder=\"Search\" type=\"text\" id=\"edit-custom-search-blocks-form-1--2\" name=\"custom_search_blocks_form_1\" value=\"\" size=\"15\" maxlength=\"128\"/>\n                                            </div>\n                                            <input type=\"hidden\" name=\"delta\" value=\"1\"/>\n                                            <input type=\"hidden\" name=\"form_id\" value=\"custom_search_blocks_form_1\"/>\n                                            <div class=\"form-actions form-wrapper\" id=\"edit-actions\">\n                                                <input type=\"submit\" id=\"edit-submit\" name=\"op\" value=\"Search\" class=\"form-submit\"/>\n                                            </div>\n                                        </div>\n                                    </form>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div id=\"nav\">\n                    <div class=\"section clearfix\">\n                        <div class=\"region region-nav\">\n                            <div id=\"block-block-1\" class=\"block block-block\">\n                                <div class=\"content\">\n                                    <p>\n                                        <a href=\"http://iderapharma.com/site-map\">Sections</a>\n                                    </p>\n                                </div>\n                            </div>\n                            <div id=\"block-menu-block-1\" class=\"block block-menu-block\">\n                                <div class=\"content\">\n                                    <div class=\"menu-block-wrapper clearfix\">\n                                        <ccbn:navigation-placeholder name=\"responsiveNav\" xmlns:ccbn=\"urn:ccbn\"/>\n                                    </div>\n                                </div>\n                            </div>\n                            <div id=\"block-menu-block-5\" class=\"block block-menu-block\">\n                                <div class=\"content\">\n                                    <div class=\"menu-block-wrapper clearfix\">\n                                        <ul class=\"menu\">\n                                            <li>\n                                                <a href=\"http://iderapharma.com/terms-use\">Terms of Use</a>\n                                            </li>\n                                            <li>\n                                                <a href=\"http://iderapharma.com/contact-us\">Contact Us</a>\n                                            </li>\n                                            <li>\n                                                <a href=\"http://iderapharma.com/careers\">Careers</a>\n                                                <ul class=\"menu\">\n                                                    <li>\n                                                        <a href=\"http://iderapharma.com/careers\">Careers</a>\n                                                    </li>\n                                                    <li class=\"last\">\n                                                        <a href=\"http://iderapharma.com/careers/job-opportunities\">Job Opportunities</a>\n                                                    </li>\n                                                </ul>\n                                            </li>\n                                            <li class=\"last\">\n                                                <a href=\"http://iderapharma.com/site-map\">Site Map</a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div id=\"banner\">\n                    <div class=\"section clearfix\">\n                        <div class=\"region region-banner\">\n                            <div class=\"banner clearfix\">\n                                <div class=\"banner-img\">\n                                    <img width=\"575\" height=\"100\" src=\"http://iderapharma.com/sites/all/themes/idera/img/banner-ir.jpg\" alt=\"\"/>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div id=\"content\">\n                    <div class=\"section clearfix wideContent\">\n                        <div class=\"region region-content\">\n                            <div id=\"block-system-main\" class=\"block block-system\">\n                                <div class=\"content\">\n                                    <div class=\"panel-internal panel-internal-no-sidebar clearfix\">\n                                        <div class=\"panel-internal-region-left clearfix\">\n                                            <div class=\"panel-pane pane-block pane-menu-block-4\">\n                                                <div class=\"pane-content\">\n                                                    <div class=\"menu-block-wrapper clearfix\">\n                                                        <ccbn:navigation-placeholder name=\"leftNav\" xmlns:ccbn=\"urn:ccbn\"/>\n                                                    </div>\n                                                </div>\n                                            </div>\n                                                                                        <div class=\"panel-pane pane-views-panes pane-feature-sidebar-panel-pane-1\">\n                                                                                            <div class=\"pane-content\">\n                                                                                                <div class=\"view view-feature-sidebar view-id-feature_sidebar view-display-id-panel_pane_1\">\n                                                                                                    <div class=\"view-content\">\n                                            <!-- Pages can have one or more sidebar sections. Each sidebar section can have a different accent color. Samples of all of the available options are below - they can be removed or re-ordered as needed. -->\n                                            <!-- Begin Sidebar Content -->\n                                                                                                        \n                                                                                                        <div class=\"feature teal clearfix\">\n                                                                                                            <ccbn:navigation-placeholder name=\"contactInformation\" xmlns:ccbn=\"urn:ccbn\"/>\n                                                                                                        </div>\n                                                                                                        <div class=\"feature blue clearfix\">\n                                                                                                            <ccbn:navigation-placeholder name=\"toolkitSideBar\" xmlns:ccbn=\"urn:ccbn\"/>\n                                                                                                        </div>\n                                            <!-- End Sidebar Content -->\n                                                                                                    </div>\n                                                                                                </div>\n                                                                                            </div>\n                                                                                        </div>\n                                        </div>\n                                        <a id=\"main-content\">&#160;</a>\n                                        <div class=\"panel-internal-region-center clearfix\">\n                                            <xsl:if test=\"$pageName='irol-irhome'\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n                                                <div class=\"panel-pane pane-entity-field pane-node-field-image\">\n                                                    <div class=\"pane-content\">\n                                                        <img src=\"http://iderapharma.com/sites/all/themes/idera/img/ir.png\" width=\"66\" height=\"66\" alt=\"\"/>\n                                                    </div>\n                                                </div>\n                                            </xsl:if>\n                                            <div class=\"panel-pane pane-node-content\">\n<!-- Page title goes here -->\n                                                <h1 class=\"pane-title\">\n                                                    <xsl:value-of select=\"$pageHeading\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"/>\n                                                </h1>\n                                                <div class=\"pane-content\">\n                                                    <div class=\"content irContent\">\n<!-- Begin Main Content -->\n                                                        <ccbn:page-content xmlns:ccbn=\"urn:ccbn\"/>\n<!-- End Main Content -->\n                                                    </div>\n                                                </div>\n                                            </div>\n                                        </div>\n                                       \n                                    </div>\n                                </div>\n                            </div>\n                            <div id=\"block-block-3\" class=\"block block-block\">\n                                <div class=\"content\">\n                                    <p>\n                                        <a href=\"#top\">Back to top</a>\n                                    </p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div id=\"footer\">\n                    <div class=\"section clearfix\">\n                        <div class=\"region region-footer\">\n                            <div id=\"block-block-2\" class=\"block block-block\">\n                                <div class=\"content\">\n                                    <xsl:text disable-output-escaping=\"yes\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">Share &lt;a class=\"addthis_button_twitter\"&gt;\n                                    &lt;/a&gt;\n                                    &lt;a class=\"addthis_button_facebook\"&gt;\n                                    &lt;/a&gt;\n                                    &lt;a class=\"addthis_button_compact\"&gt;\n                                    &lt;/a&gt;</xsl:text>\n                                </div>\n                            </div>\n                            <div id=\"block-menu-block-3\" class=\"block block-menu-block\">\n                                <div class=\"content\">\n                                    <div class=\"menu-block-wrapper menu-block-3 menu-name-menu-footer-menu menu-level-1 clearfix\">\n                                        <ul class=\"menu\">\n                                            <li>\n                                                <a href=\"http://iderapharma.com/terms-use\">Terms of Use</a>\n                                            </li>\n                                            <li>\n                                                <a href=\"http://iderapharma.com/contact-us\">Contact Us</a>\n                                            </li>\n                                            <li>\n                                                <a href=\"http://iderapharma.com/careers\">Careers</a>\n                                            </li>\n                                            <li class=\"last\">\n                                                <a href=\"http://iderapharma.com/site-map\">Site Map</a>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                        <p id=\"copyright\">© 2013 Idera Pharmaceuticals</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <xsl:if test=\"$pageName='irol-alertslong'\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <script type=\"text/javascript\" src=\"client/20/208904/script/alerts.js\">\n            </script>\n        </xsl:if>\n        <xsl:text disable-output-escaping=\"yes\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">&lt;!--[if lt IE 9]&gt;\n&lt;/div&gt;\n&lt;![endif]--&gt;</xsl:text>\n    </body>\n</html>",
 					"settings":
 					{
-						"buffer_size": 443,
+						"buffer_size": 19719,
 						"line_ending": "Windows"
 					}
 				},
 				{
-					"contents": "$(document).ready(function(){\n alert('test');\n});",
+					"contents": "<!--\n      PAGE SECTION: Above Sitewide Header\n-->\n<ccbn:page-section pid=\"09c5aa9f-32cc-47cd-9124-4c2e7dfc5249\" type=\"AboveSiteWideHeader\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"1cf9ebe3-558b-4172-a1db-4f64eafca157\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"c07d3761-cba7-4c7d-b35a-420993e282b6\">\n            <td pid=\"c9115504-cac2-49c1-ab08-b4b4eecf31ae\">\n                <ccbn:bucket pid=\"92021718-d254-4cf1-b56f-09a9b7a9d865\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Below Sitewide Header\n-->\n<ccbn:page-section pid=\"378670dc-697c-4ac4-8c81-ffc86e50912f\" type=\"BelowSiteWideHeader\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"62bda453-e9da-4b87-90e8-f897f7e3b931\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"b06dc5d1-967a-4a41-a6e1-8d8962f638da\">\n            <td pid=\"db0f8d05-dddc-4866-95fe-08d25a679202\">\n                <ccbn:bucket pid=\"468a546d-d8d2-416e-8119-42a2fce21818\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Page Content\n-->\n<ccbn:page-section pid=\"9912bc52-cf7d-42b0-aa3d-7a125356271f\" type=\"PageContent\" status=\"Show\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <ccbn:bucket pid=\"ed474129-87b6-4700-abce-e9986e40781b\">\n        <ccbn:html-block pid=\"3d4d48a7-1d44-40ea-898b-bb160ada7cd5\">\n            <section class=\"grid_6\" id=\"main\">\n<!-- content -->\n                <article class=\"grid_6 alpha omega\" id=\"content\">\n                    <div class=\"gallery-block-fidelity\">\n                        <h2>Harbinger Cares</h2>\n                        <img width=\"984\" height=\"235\" alt=\"image description\" src=\"http://media.corporate-ir.net/media_files/IROL/11/118763/img/main_img.jpg\"/>\n                    </div>\n                    <div class=\"clear\"/>\n<!-- info-section -->\n                    <div class=\"info-section grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha column\" style=\"height: 248px;\">\n                            <div class=\"text-block\">\n                                <h3>Our Mission</h3>\n                                <p>\n                        Our Mission: Harbinger Group Inc. believes it is important to give back to the communities in which we operate.  We are honored to have developed relationships with a number of outstanding local, national and global charitable organizations and to provide support for their valuable endeavors. \n                    </p>\n                            </div>\n                        </div>\n                        <div class=\"grid_2 omega column aside\" style=\"height: 248px;\">\n<!-- adv-list -->\n                            <div class=\"adv-list\">\n                                <div class=\"title-section\">Quick Links</div>\n                                <a target=\"_blank\" href=\"www.starkeyhearingfoundation.org\">www.starkeyhearingfoundation.org</a>\n                                <a target=\"_blank\" href=\"http://keepachildalive.org/\">http://keepachildalive.org/</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">www.reliefbus.org</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">www.challengedathletes.org</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">myhealthycommunity.webs.com/</a>\n                            </div>\n                        </div>\n                        <br/>\n                        <br/>\n                    </div>\n                    <div class=\"clear\"/>\n<!-- info-section-2 -->\n                    <div class=\"info-section-2 grid_6 alpha omega\">\n                        <div class=\"text-block-2\">\n                            <h3>Fidelity &amp; Guaranty Life's Product Portfolio</h3>\n                            <p>Fidelity &amp; Guaranty Life's core products include fixed indexed   annuities, fixed rate and payout annuities, and indexed universal life   insurance, which are distributed throughout the United States.</p>\n                        </div>\n                    </div>\n                    <div class=\"clear\"/>\n                    <div class=\"grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha\">\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Annuity Products</h4>\n                                </div>\n                                <table pid=\"e2cc4ecd-e674-40d2-b001-8f21098e607d\">\n                                    <tbody>\n                                        <tr pid=\"06e8b24f-ec31-47e3-be44-32458f31867c\">\n                                            <td pid=\"3ffa9cb3-4f10-44dc-bbbc-2a90c7dd221c\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/prosperity-elite-series\">Prosperity Elite Series</a>\n                                            </td>\n                                            <td pid=\"23102cfe-d279-45c5-a016-8638bedd634d\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-platinum\">FG Guarantee-Platinum</a>\n                                            </td>\n                                            <td pid=\"8c05ad29-4fc7-430f-90a4-339e8eac0028\" class=\"col-3\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-index-choice-9\">FG Index-Choice 9</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"559c17bb-ea8e-4566-8589-18c1ed4ad37b\">\n                                            <td pid=\"d3b806df-b879-4c69-9cf6-236c86157059\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-accumulatorplus-series\">FG AccumulatorPlus Series</a>\n                                            </td>\n                                            <td pid=\"87285cb1-51cb-4509-9370-5009715b6b81\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-immediate-income\">FG Immediate-Income</a>\n                                            </td>\n                                            <td pid=\"bc4f4a42-2653-4582-b3a2-06d4eb973904\" class=\"col-3\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fgny-index-safety-7\">FGNY Index-Safety 7</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"717de42f-50fd-44a3-a807-bd7f4b084143\">\n                                            <td pid=\"c748d84d-d6cf-423c-8935-f45358f985e8\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-plus\">FG Guarantee-Plus</a>\n                                            </td>\n                                            <td pid=\"cfb9e939-5c58-4c52-b229-0bb69bf86bc7\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fgny-index-choice-10\">FGNY Index-Choice 10</a>\n                                            </td>\n                                            <td pid=\"df90881a-103c-4648-8570-2ca2c6bf4f14\" class=\"col-3\"/>\n                                        </tr>\n                                    </tbody>\n                                </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/annuity-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Annuity Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                            </div>\n                        </div>\n                        <div class=\"grid_2 omega\">\n<!-- block-1 -->\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Quick Facts</h4>\n                                </div>\n                                <div class=\"text-block\">\n                                    <p>For over 50 years, Fidelity &amp; Guaranty Life has been a catalyst to help others plan for tomorrow</p>\n                                    <p>Products distributed through a network of approximately 19,000 independent agents</p>\n                                    <p>Top ten market share position for fixed indexed annuity sales</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"clear\"/>\n                    <div class=\"grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha\">\n<!-- block-1 -->\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Life Products</h4>\n                                </div>\n                                <table pid=\"cbf807d9-a348-488d-8a75-5b3087ad12bb\">\n                                    <tbody>\n                                        <tr pid=\"9fd56da7-2e9d-47ef-9a52-a79f1706005d\">\n                                            <td pid=\"71f6eae3-ab45-407e-8af8-8b3afbad7d17\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-elite\">FG Life-Elite</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"f2bd1345-186d-42f1-8b58-c80ee82ed4f8\">\n                                            <td pid=\"8915b9f4-9662-400e-9e7c-dfb7ffd021ab\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-choice\">FG Life-Choice</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"ed42c0da-d20f-462c-a94d-1f722aba441e\">\n                                            <td pid=\"6da4a539-133e-4dd5-b4c3-fb8499231917\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-gold\">FG Life-Gold</a>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/life-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Life Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                                <br/>\n                                <br/>\n                                <p style=\"font-size:11px;\">HGI provides these links as a service to website visitors. HGI is not responsible for the privacy policy or contents of any linked website.</p>\n                            </div>\n                        </div>\n                    </div>\n                </article>\n            </section>\n        </ccbn:html-block>\n    </ccbn:bucket>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Above Sitewide Footer\n-->\n<ccbn:page-section pid=\"e8d8678e-e24f-41cc-9e6a-0e71d39ec11e\" type=\"AboveSiteWideFooter\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"d443abf6-19e2-4b93-b59e-ff865ece5549\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"fba26cfd-a7e9-4b54-84e1-6dab5a385c1b\">\n            <td pid=\"71f81ba9-e113-4638-afc1-7af196bcbdfa\">\n                <ccbn:bucket pid=\"59f74a4a-f892-4853-a380-ca12fd8a0e74\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Below Sitewide Footer\n-->\n<ccbn:page-section pid=\"184d3efc-56a8-476d-b89c-b59d4b210d97\" type=\"BelowSiteWideFooter\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"79a83e11-81e4-40e4-8054-7e14fb9e07cf\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"c91887f6-35e5-4143-a115-1da344619f81\">\n            <td pid=\"c81e8a39-4bcb-4f4c-814c-619a5fa8312f\">\n                <ccbn:bucket pid=\"0594695d-8366-43fc-a0d1-3e2e1c7edb86\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>",
 					"settings":
 					{
-						"buffer_size": 49,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "<ul>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-irhome'\">\n				Corporate Overview\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-IRHome\">Corporate Overview</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-gov')\">\n				Corporate Governance\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"'phoenix.zhtml?c=115565&amp;p=irol-govManage\">Corporate Governance</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-fund') or $pageName='irol-definition'\">\n				Advanced<br/>Fundamentals\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-fundSnapshot\">Advanced<br/> Fundamentals</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-reportsannual'\">\n				Annual Report\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-reportsAnnual\">Annual Report</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-audioarchives'\">\n				Audio Archives\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-audioarchives\">Audio Archives</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-calendar') or contains($pageName,'irol-event') or $pageName='irol-guestbook'\">\n				Calendar of Events\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-calendar\">Calendar of Events</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-news')\">\n				News Releases\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-news&amp;nyo=0\">News Releases</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-presentations'\">\n				Posters/<br/>Presentations\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-presentations\">Posters/<br/>Presentations</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-sec')\">\n				SEC Filings\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-sec\">SEC Filings</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-stock')\">\n				Stock Quote\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-stockquote\">Stock Quote</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n<!--     <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-proxy'\">\n				Proxy Information\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-proxy\">Proxy Information</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li> -->\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"$pageName='irol-faq2'\">\n				Investor FAQs\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-faq2\">Investor FAQs</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n    <li>\n        <xsl:choose xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:when test=\"contains($pageName,'irol-inforeq')\">\n				Information Request\n			</xsl:when>\n            <xsl:otherwise>\n                <a href=\"phoenix.zhtml?c=115565&amp;p=irol-infoReq\">Information Request</a>\n            </xsl:otherwise>\n        </xsl:choose>\n    </li>\n</ul>",
-					"settings":
-					{
-						"buffer_size": 4755,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/user/base16-railscasts.dark (SL).tmTheme",
-					"settings":
-					{
-						"buffer_size": 12447,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "div {\n	padding: 10px !important;\n}",
-					"settings":
-					{
-						"buffer_size": 34,
-						"line_ending": "Windows"
-					}
-				},
-				{
-					"contents": "Package Control Messages\n========================\n\nSublimeLinter:\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          SublimeLinter 3 is NOT a drop-in replacement for\n          earlier versions.\n  \n          Linters *NOT* included with SublimeLinter 3, they\n          must be installed separately.\n  \n          Settings are different.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://sublimelinter.readthedocs.org\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  I spent hundreds of hours writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n  \n",
-					"settings":
-					{
-						"buffer_size": 1744,
+						"buffer_size": 13478,
 						"line_ending": "Windows",
-						"name": "Package Control Messages",
+						"name": "<!--"
+					}
+				},
+				{
+					"contents": "<!--\n      PAGE SECTION: Above Sitewide Header\n-->\n<ccbn:page-section pid=\"09c5aa9f-32cc-47cd-9124-4c2e7dfc5249\" type=\"AboveSiteWideHeader\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"1cf9ebe3-558b-4172-a1db-4f64eafca157\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"c07d3761-cba7-4c7d-b35a-420993e282b6\">\n            <td pid=\"c9115504-cac2-49c1-ab08-b4b4eecf31ae\">\n                <ccbn:bucket pid=\"92021718-d254-4cf1-b56f-09a9b7a9d865\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Below Sitewide Header\n-->\n<ccbn:page-section pid=\"378670dc-697c-4ac4-8c81-ffc86e50912f\" type=\"BelowSiteWideHeader\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"62bda453-e9da-4b87-90e8-f897f7e3b931\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"b06dc5d1-967a-4a41-a6e1-8d8962f638da\">\n            <td pid=\"db0f8d05-dddc-4866-95fe-08d25a679202\">\n                <ccbn:bucket pid=\"468a546d-d8d2-416e-8119-42a2fce21818\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Page Content\n-->\n<ccbn:page-section pid=\"9912bc52-cf7d-42b0-aa3d-7a125356271f\" type=\"PageContent\" status=\"Show\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <ccbn:bucket pid=\"ed474129-87b6-4700-abce-e9986e40781b\">\n        <ccbn:html-block pid=\"3d4d48a7-1d44-40ea-898b-bb160ada7cd5\">\n            <section class=\"grid_6\" id=\"main\">\n<!-- content -->\n                <article class=\"grid_6 alpha omega\" id=\"content\">\n                    <div class=\"gallery-block-fidelity\">\n                        <h2>Harbinger Cares</h2>\n                        <img width=\"984\" height=\"235\" alt=\"image description\" src=\"http://media.corporate-ir.net/media_files/IROL/11/118763/img/main_img.jpg\"/>\n                    </div>\n                    <div class=\"clear\"/>\n<!-- info-section -->\n                    <div class=\"info-section grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha column\" style=\"height: 248px;\">\n                            <div class=\"text-block\">\n                                <h3>Our Mission</h3>\n                                <p>\n                        Our Mission: Harbinger Group Inc. believes it is important to give back to the communities in which we operate.  We are honored to have developed relationships with a number of outstanding local, national and global charitable organizations and to provide support for their valuable endeavors. \n                    </p>\n                            </div>\n                        </div>\n                        <div class=\"grid_2 omega column aside\" style=\"height: 248px;\">\n<!-- adv-list -->\n                            <div class=\"adv-list\">\n                                <div class=\"title-section\">Quick Links</div>\n                                <a target=\"_blank\" href=\"www.starkeyhearingfoundation.org\">www.starkeyhearingfoundation.org</a>\n                                <a target=\"_blank\" href=\"http://keepachildalive.org/\">http://keepachildalive.org/</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">www.reliefbus.org</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">www.challengedathletes.org</a>\n                                <a target=\"_blank\" href=\"www.reliefbus.org\">myhealthycommunity.webs.com/</a>\n                            </div>\n                        </div>\n                        <br/>\n                        <br/>\n                    </div>\n                    <div class=\"clear\"/>\n<!-- info-section-2 -->\n                    <div class=\"info-section-2 grid_6 alpha omega\">\n                        <div class=\"text-block-2\">\n                            <h3>Fidelity &amp; Guaranty Life's Product Portfolio</h3>\n                            <p>Fidelity &amp; Guaranty Life's core products include fixed indexed   annuities, fixed rate and payout annuities, and indexed universal life   insurance, which are distributed throughout the United States.</p>\n                        </div>\n                    </div>\n                    <div class=\"clear\"/>\n                    <div class=\"grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha\">\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Annuity Products</h4>\n                                </div>\n                                <table pid=\"e2cc4ecd-e674-40d2-b001-8f21098e607d\">\n                                    <tbody>\n                                        <tr pid=\"06e8b24f-ec31-47e3-be44-32458f31867c\">\n                                            <td pid=\"3ffa9cb3-4f10-44dc-bbbc-2a90c7dd221c\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/prosperity-elite-series\">Prosperity Elite Series</a>\n                                            </td>\n                                            <td pid=\"23102cfe-d279-45c5-a016-8638bedd634d\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-platinum\">FG Guarantee-Platinum</a>\n                                            </td>\n                                            <td pid=\"8c05ad29-4fc7-430f-90a4-339e8eac0028\" class=\"col-3\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-index-choice-9\">FG Index-Choice 9</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"559c17bb-ea8e-4566-8589-18c1ed4ad37b\">\n                                            <td pid=\"d3b806df-b879-4c69-9cf6-236c86157059\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-accumulatorplus-series\">FG AccumulatorPlus Series</a>\n                                            </td>\n                                            <td pid=\"87285cb1-51cb-4509-9370-5009715b6b81\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-immediate-income\">FG Immediate-Income</a>\n                                            </td>\n                                            <td pid=\"bc4f4a42-2653-4582-b3a2-06d4eb973904\" class=\"col-3\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fgny-index-safety-7\">FGNY Index-Safety 7</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"717de42f-50fd-44a3-a807-bd7f4b084143\">\n                                            <td pid=\"c748d84d-d6cf-423c-8935-f45358f985e8\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-plus\">FG Guarantee-Plus</a>\n                                            </td>\n                                            <td pid=\"cfb9e939-5c58-4c52-b229-0bb69bf86bc7\" class=\"col-2\">\n                                                <a href=\"http://home.fglife.com/annuity-products/fgny-index-choice-10\">FGNY Index-Choice 10</a>\n                                            </td>\n                                            <td pid=\"df90881a-103c-4648-8570-2ca2c6bf4f14\" class=\"col-3\"/>\n                                        </tr>\n                                    </tbody>\n                                </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/annuity-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Annuity Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                            </div>\n                        </div>\n                        <div class=\"grid_2 omega\">\n<!-- block-1 -->\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Quick Facts</h4>\n                                </div>\n                                <div class=\"text-block\">\n                                    <p>For over 50 years, Fidelity &amp; Guaranty Life has been a catalyst to help others plan for tomorrow</p>\n                                    <p>Products distributed through a network of approximately 19,000 independent agents</p>\n                                    <p>Top ten market share position for fixed indexed annuity sales</p>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"clear\"/>\n                    <div class=\"grid_6 alpha omega\">\n                        <div class=\"grid_4 alpha\">\n<!-- block-1 -->\n                            <div class=\"block-1\">\n                                <div class=\"heading\">\n                                    <h4>Life Products</h4>\n                                </div>\n                                <table pid=\"cbf807d9-a348-488d-8a75-5b3087ad12bb\">\n                                    <tbody>\n                                        <tr pid=\"9fd56da7-2e9d-47ef-9a52-a79f1706005d\">\n                                            <td pid=\"71f6eae3-ab45-407e-8af8-8b3afbad7d17\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-elite\">FG Life-Elite</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"f2bd1345-186d-42f1-8b58-c80ee82ed4f8\">\n                                            <td pid=\"8915b9f4-9662-400e-9e7c-dfb7ffd021ab\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-choice\">FG Life-Choice</a>\n                                            </td>\n                                        </tr>\n                                        <tr pid=\"ed42c0da-d20f-462c-a94d-1f722aba441e\">\n                                            <td pid=\"6da4a539-133e-4dd5-b4c3-fb8499231917\" class=\"col-1\">\n                                                <a href=\"http://home.fglife.com/life-products/fg-life-gold\">FG Life-Gold</a>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/life-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Life Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                                <br/>\n                                <br/>\n                                <p style=\"font-size:11px;\">HGI provides these links as a service to website visitors. HGI is not responsible for the privacy policy or contents of any linked website.</p>\n                            </div>\n                        </div>\n                    </div>\n                </article>\n            </section>\n        </ccbn:html-block>\n    </ccbn:bucket>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Above Sitewide Footer\n-->\n<ccbn:page-section pid=\"e8d8678e-e24f-41cc-9e6a-0e71d39ec11e\" type=\"AboveSiteWideFooter\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"d443abf6-19e2-4b93-b59e-ff865ece5549\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"fba26cfd-a7e9-4b54-84e1-6dab5a385c1b\">\n            <td pid=\"71f81ba9-e113-4638-afc1-7af196bcbdfa\">\n                <ccbn:bucket pid=\"59f74a4a-f892-4853-a380-ca12fd8a0e74\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>\n<!--\n\n\n      PAGE SECTION: Below Sitewide Footer\n-->\n<ccbn:page-section pid=\"184d3efc-56a8-476d-b89c-b59d4b210d97\" type=\"BelowSiteWideFooter\" status=\"Hide\" user-id=\"764337\" user-name=\"James.Velasco\" locked=\"False\" company-id=\"118763\" code-branch=\"Maintenance\" xmlns:ccbn=\"urn:ccbn\">\n    <table pid=\"79a83e11-81e4-40e4-8054-7e14fb9e07cf\" width=\"100%\" border=\"0\" style=\"lineHeight:0px\">\n        <tr pid=\"c91887f6-35e5-4143-a115-1da344619f81\">\n            <td pid=\"c81e8a39-4bcb-4f4c-814c-619a5fa8312f\">\n                <ccbn:bucket pid=\"0594695d-8366-43fc-a0d1-3e2e1c7edb86\"/>\n            </td>\n        </tr>\n    </table>\n</ccbn:page-section>",
+					"settings":
+					{
+						"buffer_size": 13478,
+						"line_ending": "Windows",
+						"name": "<!--"
+					}
+				},
+				{
+					"contents": "////////////////////////////////\n// Regex with scope qualifiers//\n////////////////////////////////\n// Required parameters:\n//     find:    Regex description of what you would like to target.\n//\n// Optional parameters:\n//     replace:      description of what you would like to replace target with.\n//                   Variables are okay for non-literal searches and are done by escaping\n//                   the selection number \\\\1 etc.  Default value is \"\\\\0\".\n//     literal:      Boolean setting to define whether the find and replace is literal or not.\n//                   Default is false.\n//     greedy:       Boolean setting to define whether search is greedy or not. Default is true.\n//     case:         Boolean defining case sensitivity.  True equals sensitive. Defualt is true.\n//     dotall:       Boolean defining whether to use dotall flag in regex (include \\n etc. when using dot).\n//                   Default is False\n//     scope_filter: an array of scope qualifiers for the match.\n//                       - Any instance of scope qualifies match: scope.name\n//                       - Entire match of scope qualifies match: !scope.name\n//                       - Any instance of scope disqualifies match: -scope.name\n//                       - Entire match of scope disqualifies match: -!scope.name\n\n//////////////////////////////////////////////////////////////\n// Scope search with regex qualifier (also find and replace)//\n//////////////////////////////////////////////////////////////\n// Required parameters:\n//     scope:    scope you would like to target\n//\n// Optional parameters:\n//     find:            regex description that is to be applied to the scope\n//                      to qualify.  Also can be used to find and replace\n//                      within the found scope.  Default is None.\n//     replace:         description of what you would like to replace within the scope.\n//                      Default value is \"\\\\0\".\n//     literal:         Boolean setting to define whether the find and replace is literal or not.\n//                      Default is false.\n//     greedy_replace:  Boolean setting to define whether regex search is greedy or not. Default is true.\n//     greedy_scope:    Boolean setting to define whether scope search is greedy or not. Default is true.\n//     case:            Boolean setting to define whether regex search is case sensitive. Default is true.\n//     dotall:          Boolean defining whether to use dotall flag in regex (include \\n etc. when using dot).\n//                      Default is False\n//     multi_pass_regex:Boolean setting to define whether there will be multiple sweeps on the scope region\n//                      region to find and replace all instances of the regex, when regex cannot be formatted\n//                      to find all instances in a greedy fashion.  Default is false.\n{\n    \"replacements\": {\n        // Example replacements\n        \"html5_remove_deprecated_type_attr\": {\n            \"find\": \"(<(style|script)[^>]*)\\\\stype=(\\\"|')text/(css|javascript)(\\\"|')([^>]*>)\",\n            \"replace\": \"\\\\1\\\\6\",\n            \"greedy\": true,\n            \"case\": false\n        },\n        // remove_json_dangling_commas\n        \"remove_json_dangling_commas\": {\n            \"find\": \",([\\\\r\\\\n\\\\s]*)(\\\\]|\\\\})\",\n            \"replace\": \"\\\\1\\\\2\",\n            \"greedy\": true,\n            \"scope_filter\": [\"-string\", \"-comment\"]\n        },\n        \"remove_html_comments\": {\n            \"find\": \"<!--[\\\\s\\\\S]+?-->\",\n            \"replace\": \"\",\n            \"scope_filter\": [\"!comment\"],\n            \"greedy\": true,\n            \"case\": true\n        },\n        \"remove_trailing_spaces\": {\n            \"find\": \"[ \\\\t]+$\",\n            \"replace\": \"\",\n            \"greedy\": true,\n            \"case\": true\n        },\n        // Delete a comment or comment blocks\n        \"remove_comments\": {\n            \"scope\": \"comment\",\n            \"find\" : \"([^\\\\n\\\\r]+)\",\n            \"replace\": \"\",\n            \"greedy_replace\": true\n        }\n    },\n\n    // If on_save is true, RegReplace will search through the file patterns listed below right before a file is saved,\n    // if the file name matches a file pattern, the sequence will be applied before the file is saved.\n    // RegReplace will apply all sequences that apply to a given file in the order they appear below.\n    \"on_save\": false,\n\n    // Highlight visual settings\n    \"on_save_highlight_scope\": \"invalid\",\n    \"on_save_highlight_style\": \"outline\",\n\n    // on_save replacements\n    \"on_save_sequences\": [\n        // An example on_save event that removes dangling commas from json files\n        // - file_regex: an array of regex strings that must match the file for the sequence to be applied\n        // - case: regex case sensitivity (true|false) false is default (this setting is optional)\n        // - file_pattern: an array of file patterns that must match for the sequence to be applied\n        // - sequence: an array of replacement definitions to be applied on saving the file\n        // - multi_pass: perform multiple passes on file to catch all regex instances\n        // - action: (mark|fold|unfold) instead of replace.  Only one action can be used\n        {\n            \"file_regex\": [\".*\\\\.sublime-(settings|commands|menu|keymap|mousemap|theme|build|project|completions|commands)\"],\n            \"file_pattern\": [\"*.json\"],\n            \"sequence\": [\"remove_json_dangling_commas\"]\n        },\n        // An example on_save_sequence that targets all files and trims trailing spaces\n        // - file_pattern: an array of file patterns that must match for the sequence to be applied\n        // - sequence: an array of replacement definitions to be applied on saving the file\n        {\"file_pattern\": [\"*\"], \"sequence\": [\"remove_trailing_spaces\"]}\n    ],\n\n    // Show replace results in panel\n    \"results_in_panel\": false,\n\n    // Maximum sweep threshold for multi-pass\n    \"multi_pass_max_sweeps\": 100,\n\n    // Color? (scope)\n    \"find_highlight_color\": \"invalid\",\n\n    // Highlight style? (outline|solid|underline)\n    \"find_highlight_style\": \"outline\",\n\n    // Search under selection(s) if and only if exists\n    \"selection_only\": false\n}\n",
+					"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/RegReplace/reg_replace.sublime-settings",
+					"file_size": -1,
+					"file_write_time": -1,
+					"settings":
+					{
+						"buffer_size": 6181,
+						"line_ending": "Windows",
+						"read_only": true,
 						"scratch": true
+					}
+				},
+				{
+					"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/User/Default.sublime-commands",
+					"settings":
+					{
+						"buffer_size": 0,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<section class=\"grid_6\" id=\"main\">\n<!-- content -->\n    <article class=\"grid_6 alpha omega\" id=\"content\">\n        <div class=\"gallery-block-fidelity\">\n            <h2>Harbinger Cares</h2>\n            <img width=\"984\" height=\"235\" alt=\"image description\" src=\"http://media.corporate-ir.net/media_files/IROL/11/118763/img/main_img.jpg\"/>\n        </div>\n        <div class=\"clear\"/>\n<!-- info-section -->\n        <div class=\"info-section grid_6 alpha omega\">\n            <div class=\"grid_4 alpha column\" style=\"height: 248px;\">\n                <div class=\"text-block\">\n                    <h3>Our Mission</h3>\n                    <p>\n                        Our Mission: Harbinger Group Inc. believes it is important to give back to the communities in which we operate.  We are honored to have developed relationships with a number of outstanding local, national and global charitable organizations and to provide support for their valuable endeavors. \n                    </p>\n                </div>\n            </div>\n            <div class=\"grid_2 omega column aside\" style=\"height: 248px;\">\n<!-- adv-list -->\n                <div class=\"adv-list quick-links\">\n                        <div class=\"title-section\">Quick Links</div>\n                        <a target=\"_blank\" href=\"www.starkeyhearingfoundation.org\">www.starkeyhearingfoundation.org</a>\n                        <a target=\"_blank\" href=\"http://keepachildalive.org/\">http://keepachildalive.org/</a>\n                        <a target=\"_blank\" href=\"www.reliefbus.org\">www.reliefbus.org</a>\n                        <a target=\"_blank\" href=\"www.reliefbus.org\">www.challengedathletes.org</a>\n                        <a target=\"_blank\" href=\"www.reliefbus.org\">myhealthycommunity.webs.com/</a>\n                </div>\n            </div>\n            <br/>\n            <br/>\n        </div>\n        <div class=\"clear\"/>\n<!-- info-section-2 -->\n        <div class=\"info-section-2 grid_6 alpha omega\">\n            <div class=\"text-block-2\">\n                <h3>Fidelity &amp; Guaranty Life's Product Portfolio</h3>\n                <p>Fidelity &amp; Guaranty Life's core products include fixed indexed   annuities, fixed rate and payout annuities, and indexed universal life   insurance, which are distributed throughout the United States.</p>\n            </div>\n        </div>\n        <div class=\"clear\"/>\n        <div class=\"grid_6 alpha omega\">\n            <div class=\"grid_4 alpha\">\n                <div class=\"block-1\">\n                    <div class=\"heading\">\n                        <h4>Annuity Products</h4>\n                    </div>\n                    <table pid=\"e2cc4ecd-e674-40d2-b001-8f21098e607d\">\n                        <tbody>\n                            <tr pid=\"06e8b24f-ec31-47e3-be44-32458f31867c\">\n                                <td pid=\"3ffa9cb3-4f10-44dc-bbbc-2a90c7dd221c\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/annuity-products/prosperity-elite-series\">Prosperity Elite Series</a>\n                                </td>\n                                <td pid=\"23102cfe-d279-45c5-a016-8638bedd634d\" class=\"col-2\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-platinum\">FG Guarantee-Platinum</a>\n                                </td>\n                                <td pid=\"8c05ad29-4fc7-430f-90a4-339e8eac0028\" class=\"col-3\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fg-index-choice-9\">FG Index-Choice 9</a>\n                                </td>\n                            </tr>\n                            <tr pid=\"559c17bb-ea8e-4566-8589-18c1ed4ad37b\">\n                                <td pid=\"d3b806df-b879-4c69-9cf6-236c86157059\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fg-accumulatorplus-series\">FG AccumulatorPlus Series</a>\n                                </td>\n                                <td pid=\"87285cb1-51cb-4509-9370-5009715b6b81\" class=\"col-2\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fg-immediate-income\">FG Immediate-Income</a>\n                                </td>\n                                <td pid=\"bc4f4a42-2653-4582-b3a2-06d4eb973904\" class=\"col-3\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fgny-index-safety-7\">FGNY Index-Safety 7</a>\n                                </td>\n                            </tr>\n                            <tr pid=\"717de42f-50fd-44a3-a807-bd7f4b084143\">\n                                <td pid=\"c748d84d-d6cf-423c-8935-f45358f985e8\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fg-guarantee-plus\">FG Guarantee-Plus</a>\n                                </td>\n                                <td pid=\"cfb9e939-5c58-4c52-b229-0bb69bf86bc7\" class=\"col-2\">\n                                    <a href=\"http://home.fglife.com/annuity-products/fgny-index-choice-10\">FGNY Index-Choice 10</a>\n                                </td>\n                                <td pid=\"df90881a-103c-4648-8570-2ca2c6bf4f14\" class=\"col-3\"/>\n                            </tr>\n                        </tbody>\n                    </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/annuity-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Annuity Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                </div>\n            </div>\n            <div class=\"grid_2 omega\">\n<!-- block-1 -->\n                <div class=\"block-1\">\n                    <div class=\"heading\">\n                        <h4>Quick Facts</h4>\n                    </div>\n                    <div class=\"text-block\">\n                        <p>For over 50 years, Fidelity &amp; Guaranty Life has been a catalyst to help others plan for tomorrow</p>\n                        <p>Products distributed through a network of approximately 19,000 independent agents</p>\n                        <p>Top ten market share position for fixed indexed annuity sales</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"clear\"/>\n        <div class=\"grid_6 alpha omega\">\n            <div class=\"grid_4 alpha\">\n<!-- block-1 -->\n                <div class=\"block-1\">\n                    <div class=\"heading\">\n                        <h4>Life Products</h4>\n                    </div>\n                    <table pid=\"cbf807d9-a348-488d-8a75-5b3087ad12bb\">\n                        <tbody>\n                            <tr pid=\"9fd56da7-2e9d-47ef-9a52-a79f1706005d\">\n                                <td pid=\"71f6eae3-ab45-407e-8af8-8b3afbad7d17\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/life-products/fg-life-elite\">FG Life-Elite</a>\n                                </td>\n                            </tr>\n                            <tr pid=\"f2bd1345-186d-42f1-8b58-c80ee82ed4f8\">\n                                <td pid=\"8915b9f4-9662-400e-9e7c-dfb7ffd021ab\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/life-products/fg-life-choice\">FG Life-Choice</a>\n                                </td>\n                            </tr>\n                            <tr pid=\"ed42c0da-d20f-462c-a94d-1f722aba441e\">\n                                <td pid=\"6da4a539-133e-4dd5-b4c3-fb8499231917\" class=\"col-1\">\n                                    <a href=\"http://home.fglife.com/life-products/fg-life-gold\">FG Life-Gold</a>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>\n<!-- <table style=\"margin:20px 0;\">\n                        <tbody>\n                            <tr>\n                                <td class=\"col-1\">\n                                    <h4>\n                                        <a href=\"http://home.fglife.com/life-products/download-forms\" style=\"font-weight: bold; color:#3C6BB2;\" target=\"_blank\">Download Life Product Forms</a>\n                                    </h4>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>-->\n                    <br/>\n                    <br/>\n                    <p style=\"font-size:11px;\">HGI provides these links as a service to website visitors. HGI is not responsible for the privacy policy or contents of any linked website.</p>\n                </div>\n            </div>\n        </div>\n    </article>\n</section>",
+					"settings":
+					{
+						"buffer_size": 8989,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "<!-- header-holder -->\n<div class=\"header-holder\">\n<!-- logo -->\n    <strong class=\"logo\">\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-irlandingpage\">harbinger group inc.</a>\n    </strong>\n    <h1>Partners In Value</h1>\n</div>\n<!-- nav -->\n<ul id=\"nav\">\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-irhome')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-irhome\">Company Overview</a>\n    </li>\n    <li class=\" has-drop\">\n        <xsl:if test=\"contains($pageName, 'spectrum') or contains($pageName, 'fidelity') or contains($pageName, 'salus')  or contains($pageName, 'frontstreet')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"#\" class=\" has-drop-down-a\">Our Businesses</a>\n<!-- drop -->\n        <div class=\"drop\">\n            <ul>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-spectrum\">Spectrum Brands</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-fidelity\">Fidelity &amp; Guaranty Life</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-salus\">Salus Capital Partners</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-frontstreet\">FrontStreet Re</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-EXCOHGIPartnership\">EXCO/HGI Partnership</a>\n                </li>\n            </ul>\n        </div>\n    </li>\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-strategy')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-strategy\">Our Strategy</a>\n    </li>\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-timeline')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-timeline\">Timeline</a>\n    </li>\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-investmentteam')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-investmentteam\">Our Team</a>\n    </li>\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-sec') or contains($pageName, 'irol-govboard') or contains($pageName, 'proxy') or contains($pageName, 'irol-news') or contains($pageName, 'irol-stockquote') or contains($pageName, 'irol-govbio') or contains($pageName, 'irol-stockchart') or contains($pageName, 'irol-stocklookup') or contains($pageName, 'irol-stockcalculator') or contains($pageName, 'irol-ourbusinesses') or contains($pageName, 'irol-newsarticle') or contains($pageName, 'irol-alerts')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"#\">Investor Relations</a>\n<!-- drop -->\n        <div class=\"drop\">\n            <ul>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-news&amp;nyo=0\">News Releases and Supplemental Information</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-sec\">SEC Filings</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-govBoard\">Corporate Governance</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=proxy\">Annual Meeting and Materials</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-faq\">Frequently Asked Questions</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-stockQuote\">Stock Information</a>\n                </li>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-alerts\">Email Alerts</a>\n                </li>\n            </ul>\n        </div>\n    </li>\n    <li>\n        <xsl:if test=\"contains($pageName, 'irol-contact') or contains($pageName, 'irol-inforeq')\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">\n            <xsl:attribute name=\"class\">active</xsl:attribute>\n        </xsl:if>\n        <a href=\"phoenix.zhtml?c=118763&amp;p=irol-contact\">Contact Us</a>\n<!-- drop -->\n<!--<div class=\"drop\">\n            <ul>\n                <li>\n                    <a href=\"phoenix.zhtml?c=118763&amp;p=irol-contact\">Contact Us</a>\n                </li>\n            </ul>\n        </div>-->\n    </li>\n</ul>",
+					"settings":
+					{
+						"buffer_size": 4939,
+						"line_ending": "Windows",
+						"name": "<!-- header-holder -->"
+					}
+				},
+				{
+					"contents": "<div class=\"container\">\n		<div class=\"row top-content\">\n        	<div class=\"col-lg-12\">\n                <h1 class=\"page-title\">Harbinger Cares</h1>\n                <figure id=\"main-img\">\n                    <img src=\"/hc-main_img.jpg\" />\n                </figure>\n            </div>\n            <div class=\"main-bottom col-lg-12\">\n            	<div class=\"description col-lg-8 col-md-8\">\n                	<div class=\"title-section\">Our Mission</div>\n                    <div class=\"description-text\">\n                    	Our Mission: Harbinger Group Inc. believes it is important to give back to the communities in which we operate.  We are honored to have developed relationships with a number of outstanding local, national and global charitable organizations and to provide support for their valuable endeavors. \n                    </div>\n              	</div>\n                <div class=\"right-items quick-links col-lg-4 col-md-4\">\n                	<div class=\"title-section\">Quick Links</div>\n                    <a target=\"_blank\" href=\"www.starkeyhearingfoundation.org\">www.starkeyhearingfoundation.org</a>\n                    <a target=\"_blank\" href=\"http://keepachildalive.org/\">http://keepachildalive.org/</a>\n                    <a target=\"_blank\" href=\"www.reliefbus.org\">www.reliefbus.org</a>\n                    <a target=\"_blank\" href=\"www.reliefbus.org\">www.challengedathletes.org</a>\n                    <a target=\"_blank\" href=\"www.reliefbus.org\">myhealthycommunity.webs.com/</a>\n                </div>\n            </div>\n        </div>\n        <div class=\"row content-content\">\n			<section class=\"col-lg-12\">                \n            	<div class=\"title-section col-lg-12\">Global</div>\n                <div class=\"holder\">\n                	<article>\n                       	<figure class=\"col-lg-3 col-md-3\">\n                           	<a target=\"\" title=\"\" class=\"\" href=\"#\"><img src=\"/hc-img1.jpg\" /></a>\n                    	</figure>\n                        <div class=\"txt col-lg-9 col-md-9\">\n							<h5>How Adrian Peterson copes with severe food allergies</h5>\n                            <p>Starkey Hearing Foundation uses hearing as a vehicle to reflect caring and change lives around the world. Disabling hearing loss affects more than 360 million people, including 32 million children, worldwide, yet many do not have access to the hearing devices that can help them. Starkey Hearing Foundation fits and gives more than 100,000 hearing aids annually in the U.S. and around the world, and it has pledged to fit one million hearing aids this decade. Together with one of its largest subsidiary companies, Spectrum Brands, Harbinger has taken an active role in Starkey Hearing Foundation's work, providing free hearing aid batteries to all Foundation recipients, in addition to sponsoring hearing missions throughout the year. Over the last few years, members of our executive team have traveled with Starkey Hearing Foundation to Africa and Colombia to distribute hearing aids to those in need. For more information, please visit <a href=\"www.starkeyhearingfoundation.org\" target=\"_blank\">www.starkeyhearingfoundation.org</a>.\n</p>\n						</div>\n                    </article>\n                    <article>\n                       	<figure class=\"col-lg-3 col-md-3\">\n                           	<a target=\"\" title=\"\" class=\"\" href=\"#\"><img src=\"/hc-img2.jpg\" /></a>\n                    	</figure>\n                        <div class=\"txt col-lg-9 col-md-9\">\n							<h5>Keep A Child Alive</h5>\n                            <p>Keep a Child Alive provides innovative, life-saving HIV treatment and care as well as nutritious food and loving support to children and families affected by HIV in Africa and India.  Harbinger shares the foundation's belief that all children deserve a promising future. For more information, please visit <a href=\"http://keepachildalive.org/\" target=\"_blank\">http://keepachildalive.org/</a>. </p>\n						</div>\n                    </article>\n                </div>\n         	</section>\n            <section class=\"col-lg-12\">                \n            	<div class=\"title-section col-lg-12\">National</div>\n                <div class=\"holder\">\n                	<article>\n                       	<figure class=\"col-lg-3 col-md-3\">\n                           	<a target=\"\" title=\"\" class=\"\" href=\"#\"><img src=\"/hc-img3.jpg\" /></a>\n                    	</figure>\n                        <div class=\"txt col-lg-9 col-md-9\">\n							<h5>New York City Relief</h5>\n                            <p>\nNew York City Relief aids inner city communities by providing healthy food and hot beverages to those in need.  Through their mobile outreach known as The Relief Bus, they also offer connections to resources that lead to life transformation, and help to connect less fortunate individuals to shelters, jobs and physicians as well as detox and drug/alcohol rehabilitation centers.  Harbinger is honored to team up with New York City Relief in this effort and members of the team are planning to participate on one of the buses in the coming months. For more information, please visit <a href=\"www.newyorkcityrelief.org\" target=\"_blank\">www.newyorkcityrelief.org</a>.\n</p>\n						</div>\n                    </article>\n                    <article>\n                       	<figure class=\"col-lg-3 col-md-3\">\n                           	<a target=\"\" title=\"\" class=\"\" href=\"#\"><img src=\"/hc-img4.jpg\" /></a>\n                    	</figure>\n                        <div class=\"txt col-lg-9 col-md-9\">\n							<h5>The Challenged Athletes Foundation</h5>\n                            <p>\nThe Challenged Athletes Foundation (\"CAF\") provides opportunities and support to people with physical disabilities, so that they may enjoy sports and pursue their athletic dreams.  Many of Harbinger's team members have had the opportunity to grow and learn through athletic programs, and CAF allows us to help others benefit from athletics. For more information, please visit <a href=\"www.challengedathletes.org\" target=\"_blank\">www.challengedathletes.org</a>.\n						</div>\n                    </article>\n                </div>\n         	</section>\n            \n            \n            <section class=\"col-lg-12\">                \n            	<div class=\"title-section col-lg-12\">Local</div>\n                <div class=\"holder\">\n                	<article>\n                       	<figure class=\"col-lg-3 col-md-3\">\n                           	<a target=\"\" title=\"\" class=\"\" href=\"#\"><img src=\"/hc-img5.jpg\" /></a>\n                    	</figure>\n                        <div class=\"txt col-lg-9 col-md-9\">\n							<h5>New York City Relief</h5>\n                            <p>My Healthy Community\nMy Healthy Community is a non-profit organization dedicated to the fight against obesity, with the goal of building a healthy community. The organization teams with schools in the South-Bronx to educate youths and their families on how to be active and eat right, and also helps schools set up recreation programs for youths and health and wellness programs for adults. Recently, Harbinger arranged for helmets to be donated to the organization.  Harbinger is honored to support this organization and  its employees who dedicate their time and resources.  For more information, please visit <a href=\"myhealthycommunity.webs.com\" target=\"_blank\">myhealthycommunity.webs.com/</a>.\n</p>\n						</div>\n                    </article>\n                </div>\n         	</section>\n        </div>\n        <footer>\n            <div class=\"row\">\n                <div class=\"col-lg-12\">\n                	<ul class=\"left\">\n                    	<li><a href=\"#\">Terms and Conditions</a></li>\n                        <li><a href=\"#\">Privacy</a></li>\n                        <li><a href=\"#\">Contact</a></li>\n                    </ul>\n                    <p class=\"right\">Copyright &copy; Company 2013</p>\n                </div>\n            </div>\n        </footer>\n\n    </div>",
+					"settings":
+					{
+						"buffer_size": 7973,
+						"line_ending": "Windows"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 101.0,
+				"height": 73.0,
 				"selected_items":
 				[
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"html",
+						"Set Syntax: HTML"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Remove Package"
+					],
 					[
 						"javascript",
 						"Set Syntax: JavaScript"
@@ -85,16 +119,8 @@
 						"Set Syntax: HTML"
 					],
 					[
-						"install",
-						"Package Control: Install Package"
-					],
-					[
 						"css",
 						"Set Syntax: CSS"
-					],
-					[
-						"html",
-						"Set Syntax: HTML"
 					]
 				],
 				"width": 637.0
@@ -118,12 +144,19 @@
 			},
 			"file_history":
 			[
+				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/User/Default (Windows).sublime-keymap",
+				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/User/reg_replace.sublime-settings",
+				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/RegReplace/reg_replace.sublime-settings",
+				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/installed packages/RegReplace.sublime-package",
+				"/C/Users/jamvel/Downloads/04-08-2014_harbinger_cares_html/Site/Site/index.html",
+				"/C/Users/jamvel/Projects/TE/GIS/framework.html",
+				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/user/base16-railscasts.dark (SL).tmTheme",
 				"/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 				"/C/Users/jasonjames/Dropbox/Sublime Text 3/Data/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings"
 			],
 			"find":
 			{
-				"height": 27.0
+				"height": 28.0
 			},
 			"find_in_files":
 			{
@@ -137,6 +170,12 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"harbinger",
+					"ul",
+					"images/",
+					"quote",
+					"single.quote",
+					"href=\"/",
 					"Proxy",
 					"\\",
 					"}\n",
@@ -149,6 +188,7 @@
 				"regex": false,
 				"replace_history":
 				[
+					"/hc-"
 				],
 				"reverse": false,
 				"show_context": true,
@@ -159,7 +199,7 @@
 			"groups":
 			[
 				{
-					"selected": 3,
+					"selected": 2,
 					"sheets":
 					[
 						{
@@ -167,28 +207,19 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 443,
+								"buffer_size": 19719,
 								"regions":
 								{
-									"TagLint":
-									{
-										"flags": 52,
-										"icon": "dot",
-										"regions":
-										[
-											[
-												407,
-												413
-											]
-										],
-										"scope": "variable.parameter"
-									}
 								},
 								"selection":
 								[
 									[
-										443,
-										443
+										0,
+										0
+									],
+									[
+										1402,
+										1402
 									]
 								],
 								"settings":
@@ -197,298 +228,14 @@
 									"auto_name": "",
 									"bh_regions":
 									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
 										"bh_curly",
 										"bh_curly_center",
 										"bh_curly_open",
 										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close"
-									],
-									"is_xml": false,
-									"syntax": "Packages/HTML/HTML.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 49,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										49,
-										49
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
 										"bh_angle",
 										"bh_angle_center",
 										"bh_angle_open",
 										"bh_angle_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close"
-									],
-									"is_xml": false,
-									"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 4755,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										344,
-										344
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close"
-									],
-									"is_xml": false,
-									"syntax": "Packages/SublimeLinter/fixed-syntaxes/HTML/HTML.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 1566.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 3,
-							"type": "text"
-						},
-						{
-							"buffer": 3,
-							"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/user/base16-railscasts.dark (SL).tmTheme",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 12447,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										12305,
-										12305
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_double_quote",
-										"bh_double_quote_center",
-										"bh_double_quote_open",
-										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_regex",
-										"bh_regex_center",
-										"bh_regex_open",
-										"bh_regex_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_single_quote",
-										"bh_single_quote_center",
-										"bh_single_quote_open",
-										"bh_single_quote_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
-										"bh_round",
-										"bh_round_center",
-										"bh_round_open",
-										"bh_round_close"
-									],
-									"is_xml": true,
-									"syntax": "Packages/XML/XML.tmLanguage",
-									"translate_tabs_to_spaces": false
-								},
-								"translation.x": 0.0,
-								"translation.y": 9396.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						},
-						{
-							"buffer": 4,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 34,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										34,
-										34
-									]
-								],
-								"settings":
-								{
-									"BracketHighlighterBusy": false,
-									"bh_regions":
-									[
 										"bh_round",
 										"bh_round_center",
 										"bh_round_open",
@@ -497,41 +244,33 @@
 										"bh_regex_center",
 										"bh_regex_open",
 										"bh_regex_close",
-										"bh_curly",
-										"bh_curly_center",
-										"bh_curly_open",
-										"bh_curly_close",
-										"bh_angle",
-										"bh_angle_center",
-										"bh_angle_open",
-										"bh_angle_close",
-										"bh_square",
-										"bh_square_center",
-										"bh_square_open",
-										"bh_square_close",
-										"bh_default",
-										"bh_default_center",
-										"bh_default_open",
-										"bh_default_close",
 										"bh_single_quote",
 										"bh_single_quote_center",
 										"bh_single_quote_open",
 										"bh_single_quote_close",
-										"bh_unmatched",
-										"bh_unmatched_center",
-										"bh_unmatched_open",
-										"bh_unmatched_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
 										"bh_double_quote",
 										"bh_double_quote_center",
 										"bh_double_quote_open",
 										"bh_double_quote_close",
-										"bh_tag",
-										"bh_tag_center",
-										"bh_tag_open",
-										"bh_tag_close"
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
 									],
 									"is_xml": false,
-									"syntax": "Packages/CSS/CSS.tmLanguage"
+									"syntax": "Packages/HTML/HTML.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -541,32 +280,520 @@
 							"type": "text"
 						},
 						{
-							"buffer": 5,
+							"buffer": 1,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 1744,
+								"buffer_size": 13478,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										617,
-										617
+										1722,
+										1722
 									]
 								],
 								"settings":
 								{
 									"BracketHighlighterBusy": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"word_wrap": true
+									"auto_name": "<!--",
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 270.0,
+								"translation.y": 360.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 3,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 13478,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1286,
+										1655
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"auto_name": "<!--",
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 420.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/RegReplace/reg_replace.sublime-settings",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 6181,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										2878,
+										4014
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+								},
+								"translation.x": -0.0,
+								"translation.y": 900.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/C/Users/jamvel/Documents/GitHub/SublimeText3/Data/Packages/User/Default.sublime-commands",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 0,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close"
+									],
+									"syntax": "Packages/Text/Plain text.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8989,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										668,
+										677
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 5,
+							"type": "text"
+						},
+						{
+							"buffer": 6,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 4939,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"auto_name": "<!-- header-holder -->",
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 6,
+							"type": "text"
+						},
+						{
+							"buffer": 7,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 7973,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1500,
+										939
+									]
+								],
+								"settings":
+								{
+									"BracketHighlighterBusy": false,
+									"bh_regions":
+									[
+										"bh_curly",
+										"bh_curly_center",
+										"bh_curly_open",
+										"bh_curly_close",
+										"bh_angle",
+										"bh_angle_center",
+										"bh_angle_open",
+										"bh_angle_close",
+										"bh_round",
+										"bh_round_center",
+										"bh_round_open",
+										"bh_round_close",
+										"bh_regex",
+										"bh_regex_center",
+										"bh_regex_open",
+										"bh_regex_close",
+										"bh_single_quote",
+										"bh_single_quote_center",
+										"bh_single_quote_open",
+										"bh_single_quote_close",
+										"bh_tag",
+										"bh_tag_center",
+										"bh_tag_open",
+										"bh_tag_close",
+										"bh_double_quote",
+										"bh_double_quote_center",
+										"bh_double_quote_open",
+										"bh_double_quote_close",
+										"bh_default",
+										"bh_default_center",
+										"bh_default_open",
+										"bh_default_close",
+										"bh_square",
+										"bh_square_center",
+										"bh_square_open",
+										"bh_square_close",
+										"bh_unmatched",
+										"bh_unmatched_center",
+										"bh_unmatched_open",
+										"bh_unmatched_close"
+									],
+									"is_xml": false,
+									"syntax": "Packages/HTML/HTML.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 7,
 							"type": "text"
 						}
 					]
@@ -574,7 +801,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 26.0
+				"height": 28.0
 			},
 			"input":
 			{
@@ -611,7 +838,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 50.0
+				"height": 52.0
 			},
 			"save_all_on_build": true,
 			"select_file":

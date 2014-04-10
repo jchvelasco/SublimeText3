@@ -1,0 +1,12 @@
+[
+	{
+	    "keys": ["ctrl+shift+r"],
+	    "command": "reg_replace",
+	    "args": {"replacements": ["remove_pid"]}
+	},
+	{
+	    "keys": ["ctrl+1"],
+	    "command": "reg_replace",
+	    "args": {"replacements": ["change_nbsp"]}
+	}
+]
