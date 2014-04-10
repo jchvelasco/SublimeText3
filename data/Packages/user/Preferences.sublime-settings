@@ -1,7 +1,4 @@
 {
-	"color_scheme": "Packages/User/base16-railscasts.dark (SL).tmTheme",
-	"ignored_packages":
-	[
-		"Vintage"
-	]
+	"color_scheme": "Packages/Base16 Color Schemes/base16-railscasts.dark.tmTheme",
+	"font_size": 9
 }
